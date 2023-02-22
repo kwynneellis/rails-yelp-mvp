@@ -1,0 +1,7 @@
+<h1>Restaurants</h1>
+<ul class="list-unstyled">
+  <% @restaurants.each do |restaurant| %>
+    <li><h5><%= link_to restaurant.name, restaurant_path(restaurant), class: "text-decoration-none" %></h5><span> <%= restaurant.category.capitalize %> cuisine</span></li>
+    <hr>
+  <% end %>
+</ul>
