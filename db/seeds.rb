@@ -8,7 +8,7 @@
 puts 'Cleaning database...'
 Restaurant.destroy_all
 
-categories = ["chinese", "italian", "japanese", "french", "belgian"]
+categories = %w[chinese italian japanese french belgian]
 puts "Creating restaurants..."
 
 5.times do
