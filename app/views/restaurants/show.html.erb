@@ -9,4 +9,6 @@
   <% end %>
 </ul>
 <hr>
-<%= link_to "+ Add review", new_restaurant_review_path(@restaurant, @review), class: "btn btn-primary" %>
+<h6>Add a new review below</h6>
+<%# <%= link_to "+ Add review", new_restaurant_review_path(@restaurant, @review), class: "btn btn-primary" %>
+<%= render 'reviews/form', restaurant: @restaurant, review: @review %>
